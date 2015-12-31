@@ -1,0 +1,134 @@
+@import './vendor/flipclock.css';
+
+/*__ Variables __*/
+$body-bg: #000;
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  height: 100%;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: $body-bg;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.countdown {
+  display: flex;
+  padding: 25px 15px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  text-align: center;
+  min-height: 100%;
+  
+  &__logo {
+    width: 58vmin;
+    max-width: calc(310px + 225px); // 310px - original width from psd + 225px gutter width on video
+    margin: 0 0 5.5vmin;
+    overflow: hidden;
+  }
+  
+  &__logo-item {
+    max-width: 100%;
+  }
+  
+  &__text {
+    display: flex;
+    //width: 93vmin;
+    max-width: 1230px;
+    justify-content: center;
+    margin: 0 0 13vmin;
+    overflow: hidden;
+  }
+  
+  &__text-item {
+    display: block;
+    height: 100%;
+    width: 100%;
+  } 
+}
+
+// clock overwrites
+$cl-item-bg: #333333;
+$cl-item-shadow1: #dfd59d;
+$cl-item1-color: #ddb064;
+$cl-item2-color: #e7cb74;
+$cl-item3-color: #fef0b0;
+$cl-item4-color: #f7e89a;
+$cl-item5-color: #efdf81;
+$cl-item6-color: #e9ce76;
+$cl-item7-color: #dfb165;
+$cl-item8-color: #deb064;
+
+.flip-clock-wrapper {
+  ul {
+    li a div div.inn {
+      color: $cl-item1-color;      
+    }
+  }
+
+  ul.flip {
+    box-shadow: 0 3px 4px rgba($cl-item-shadow1, .9) !important;
+
+    .inn {
+      background: $cl-item-bg !important;
+    }
+    
+    &:nth-of-type(1) {
+      .inn { color: $cl-item1-color !important; }
+    }
+
+    &:nth-of-type(2) {
+      .inn { color: $cl-item2-color !important; }
+    }
+
+    &:nth-of-type(3) {
+      .inn { color: $cl-item3-color !important; }
+    }
+
+    &:nth-of-type(4) {
+      .inn { color: $cl-item4-color !important; }
+    }
+
+    &:nth-of-type(5) {
+      .inn { color: $cl-item5-color !important; }
+    }
+
+    &:nth-of-type(6) {
+      .inn { color: $cl-item6-color !important; }
+    }
+
+    &:nth-of-type(7) {
+      .inn { color: $cl-item7-color !important; }
+    }
+
+    &:nth-of-type(8) {
+      .inn { color: $cl-item8-color !important; }
+    }
+  }
+
+  .flip-clock-dot {
+    box-shadow: none;
+    border: 1px solid #fdf0b0;
+  }
+
+  .flip-clock-divider {
+    .flip-clock-label { color: #fff; }
+  }
+}
+

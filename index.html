@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NY Party</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="./js/vendor/flipclock.min.js"></script>
+</head>
+<body>
+  <div class="countdown">
+    <div class="countdown__logo">
+      <video class="countdown__logo-item" autoplay loop>
+        <source src="./img/logo_vid.webm" type="video/webm">
+        <source src="./img/logo_vid.mp4" type="video/mp4" />        
+        <source src="./img/logo_vid.ogv" type="video/ogv" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="countdown__text">
+      <img class="countdown__text-item" src="./img/party-intro_img.png" alt=""/>
+    </div>
+    <div class="countdown__clock">
+      <div id="clock"></div>      
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

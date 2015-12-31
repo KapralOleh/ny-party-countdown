@@ -1,0 +1,90 @@
+@import url(./vendor/flipclock.css);
+/*__ Variables __*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-size: 100%; }
+
+body {
+  height: 100%;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  overflow-x: hidden; }
+
+img {
+  max-width: 100%; }
+
+.countdown {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 15px;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  min-height: 100%; }
+  .countdown__logo {
+    width: 58vmin;
+    max-width: calc(310px + 225px);
+    margin: 0 0 5.5vmin;
+    overflow: hidden; }
+  .countdown__logo-item {
+    max-width: 100%; }
+  .countdown__text {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1230px;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 13vmin;
+    overflow: hidden; }
+  .countdown__text-item {
+    display: block;
+    height: 100%;
+    width: 100%; }
+
+.flip-clock-wrapper ul li a div div.inn {
+  color: #ddb064; }
+
+.flip-clock-wrapper ul.flip {
+  box-shadow: 0 3px 4px rgba(223, 213, 157, 0.9) !important; }
+  .flip-clock-wrapper ul.flip .inn {
+    background: #333333 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(1) .inn {
+    color: #ddb064 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(2) .inn {
+    color: #e7cb74 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(3) .inn {
+    color: #fef0b0 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(4) .inn {
+    color: #f7e89a !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(5) .inn {
+    color: #efdf81 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(6) .inn {
+    color: #e9ce76 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(7) .inn {
+    color: #dfb165 !important; }
+  .flip-clock-wrapper ul.flip:nth-of-type(8) .inn {
+    color: #deb064 !important; }
+
+.flip-clock-wrapper .flip-clock-dot {
+  box-shadow: none;
+  border: 1px solid #fdf0b0; }
+
+.flip-clock-wrapper .flip-clock-divider .flip-clock-label {
+  color: #fff; }
