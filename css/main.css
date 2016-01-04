@@ -16,7 +16,22 @@ body {
   padding: 0;
   background: #000;
   overflow-x: hidden; }
-
+.facebook-icon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 34px;
+  height: 34px;
+  background: url('../img/facebook-icon.svg') no-repeat;
+}
+.ya-share2__badge {
+  background: none !important;
+}
+.ya-share2__icon {
+  background-image: none !important;
+  width: 36px !important;
+  height: 36px !important;
+}
 img {
   max-width: 100%; }
 
@@ -37,7 +52,7 @@ img {
   text-align: center;
   min-height: 100%; }
   .countdown__logo {
-    width: 58vmin;
+    width: 30vmin;
     max-width: calc(310px + 225px);
     margin: 0 0 5.5vmin;
     overflow: hidden; }
@@ -88,3 +103,8 @@ img {
 
 .flip-clock-wrapper .flip-clock-divider .flip-clock-label {
   color: #fff; }
+@media screen and (max-width: 650px) {
+    .flip-clock-wrapper ul {
+        width: auto;
+    }
+}
